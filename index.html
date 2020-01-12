@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/892a88f0e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="row">
+        <h1>Temperature <span id="primaryText">Converter</span></h1>
+        <h5>Convert Temperatures to Fahrenheit, Celsius, or Kelvin </h5>
+        <div id="error">
+            <i class="fas fa-exclamation-triangle fa-2x"></i> <span id="errorText">Error: Unit types must be different</span> 
+        </div>
+        <form>
+            <div>
+                <h3>Convert <span id="primaryText">This:</span></h3>
+                <label for="tempValue">Temperature Value</label>
+                <input type="number" name="tempValue" id="tempValue" placeholder="Enter numerical value..." required>
+                <label for="toConvert">Unit of Measurement</label>
+                <select name="toConvert" id="toConvert">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <hr>
+                <h3>To <span id="primaryText">This:</span></h3>
+                <label for="convertTo">Unit of Measurement</label>
+                <select name="convertTo" id="convertTo">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <input type="submit" value="Convert">
+            </div>
+        </form>
+        <div id="result">
+            Result:
+            <span id="resultVal"></span>
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

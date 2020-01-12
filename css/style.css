@@ -1,0 +1,60 @@
+body {
+    background: #f4f4f4;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+input[type="submit"] {
+    background: #16a085;
+}
+
+div.row {
+    margin-left: 150px;
+    margin-top: 4rem;
+}
+
+form {
+    width: 40%;
+    border: 3px solid #16a085;
+    border-radius: 8px;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+#primaryText {
+    color: #16a085;
+}
+
+#result {
+    height: 50px;
+    width: 40%;
+    border: 3px solid #16a085;
+    border-radius: 8px;
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+#result span {
+    color: #16a085;
+}
+
+#error {
+    height: 30px;
+    width: 40%;
+    border: 3px solid #e74c3c;
+    border-radius: 8px;
+    padding: 4rem;
+    color: #e74c3c;
+    margin-bottom: 0px !important;
+    display: none;
+}
+
+#errorText {
+    padding-left: 2rem;
+    font-size: 2rem;
+}
